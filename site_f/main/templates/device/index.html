@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="ru">
+{% load static %}
+<head>
+    <meta charset="UTF-8">
+    <title>Device</title>
+</head>
+<body>
+    <header>
+        <img src="{% static 'image/device/logo.png' %}" alt="Логотип Девайс">
+        <ul>
+            <li>
+                <input type="search" placeholder="Поиск по сайту"  >
+            </li>
+            <li>
+                <a href="#" >Войти</a>
+            </li>
+            <li>
+                <a href="#">Сравнить</a>
+            </li>
+            <li>
+                <a href="#">Корзина</a>
+            </li>
+        </ul>
+    </header>
+    <nav>
+        <ul>
+            <li>Каталог товаров</li>
+            <li>Доставка</li>
+            <li>Гарантия</li>
+            <li>Контвакты</li>
+        </ul>
+        <ul>
+            <li>Виртуальная реальность</li>
+            <li>Моноподы для селфи</li>
+            <li>Экшн-камеры</li>
+            <li>Фитнес-браслеты</li>
+            <li>Умные часы</li>
+            <li>Квадрокоптеры</li>
+        </ul>
+    </nav>
+
+    <main>
+        {#слайдер#}
+        <section>
+            <div>
+                <img src="{% static 'image/device/slider-1.png' %}" alt="Селфи палка">
+                <h2>
+                    Делай селфи, <br>
+                    как Бен Стиллер!
+                </h2>
+                <p>
+                    Самая длинная палка для селфи доступна в нашем магазине.
+                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                </p>
+                <a href="#">Подробнее</a>
+                <table>
+                    <tr>
+                        <td>8.5 м</td>
+                        <td>5 кг</td>
+                        <td>Карбон</td>
+                    </tr>
+                    <tr>
+                        <td>Длина палки</td>
+                        <td>Вес палки</td>
+                        <td>Материал</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <img src="{% static 'image/device/slider-2.png' %}" alt="Фитнес браслет">
+                <h2>
+                    Худеем правильно!
+                </h2>
+                <p>
+                    Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                    не пропускать занятия и соблюдать диету.
+                </p>
+                <a href="#">Подробнее</a>
+                <table>
+                    <tr>
+                        <td>48 часов</td>
+                    </tr>
+                    <tr>
+                        <td>Без подзарядки</td>
+                    </tr>
+                </table>
+            </div>
+            <div>
+                <img src="{% static 'image/device/slider-3.png' %}" alt="Квадрокоптер">
+                <h2>
+                    Порхает как бабочка, <br>
+                    жалит как пчела!
+                </h2>
+                <a href="#">Подробнее</a>
+                <table>
+                    <tr>
+                        <td>800 м</td>
+                        <td>Дальность полета</td>
+                    </tr>
+                    <tr>
+                        <td>50 м</td>
+                        <td>Радиус поражения</td>
+                    </tr>
+                </table>
+            </div>
+        </section>
+        {# Форма письма #}
+        <section>
+            <form action="POST">
+                <lable>Ваше имя:</lable>
+                <input type="text" placeholder="Имя Фамилия">
+                <lable>Ваш e-mail:</lable>
+                <input type="text" placeholder="email@example.com">
+                <lable>Текст письма:</lable>
+                <input type="text" placeholder="В свободной форме">
+                <button type="submit">Отправить</button>
+
+            </form>
+        </section>
+        {# Популярные #}
+        <section>
+            <h1>Популярное</h1>
+            <ul>
+                <li>
+                    <img src="{% static 'image/device/popular-1.svg' %}" alt="лого VR">
+                    <p>Виртуальная реальность</p>
+                </li>
+                <li>
+                    <img src="{% static 'image/device/popular-2.svg' %}" alt="лого VR">
+                    <p>Моноподы для селфи</p>
+                </li>
+                <li>
+                    <img src="{% static 'image/device/popular-3.svg' %}" alt="лого VR">
+                    <p>Экшн-камеры</p>
+                </li>
+                <li>
+                    <img src="{% static 'image/device/popular-4.svg' %}" alt="лого VR">
+                    <p>Фитнес-браслеты</p>
+                </li>
+                <li>
+                    <img src="{% static 'image/device/popular-5.svg' %}" alt="лого VR">
+                    <p>Умные часы</p>
+                </li>
+                <li>
+                    <img src="{% static 'image/device/popular-6.svg' %}" alt="лого VR">
+                    <p>Квадрокоптеры</p>
+                </li>
+            </ul>
+        </section>
+        {# Услуги #}
+        <section>
+            <h1>Услуги</h1>
+            <button type="button">Доставка</button>
+            <button type="button">Гарантия</button>
+            <button type="button">Кредит</button>
+            <ul>
+                <li>
+                    <h2>Доставка</h2>
+                    <p>
+                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                        неплохо заработаем, поднимая его на ваш этаж.
+                    </p>
+                    <img src="{% static 'image/device/delivery.png' %}" alt="Доставка">
+                </li>
+                <li>
+                    <h2>Гарантия</h2>
+                    <p>
+                        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам 
+                        новый. Товар, не дом, конечно же.
+                    </p>
+                    <img src="{% static 'image/device/warranty.svg' %}" alt="Гарантия">
+                </li>
+                <li>
+                    <h2>Кредит</h2>
+                    <p>
+                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                        условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    <img src="{% static 'image/device/credit.svg' %}" alt="Кредит лого">
+                </li>
+            </ul>
+        </section>
+        {# логотипи #}
+        <section>
+            <ul>
+                <li><img src="{% static 'image/device/logo-1.png' %}" alt="логотип 1"></li>
+                <li><img src="{% static 'image/device/logo-2.png' %}" alt="логотип 2"></li>
+                <li><img src="{% static 'image/device/logo-3.png' %}" alt="логотип 3"></li>
+                <li><img src="{% static 'image/device/logo-4.png' %}" alt="логотип 4"></li>
+            </ul>
+        </section>
+        {# О нас #}
+        <section>
+            <h2>О нас</h2>
+            <p>
+                Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.
+            </p>
+            <p>
+                Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими
+                транспортными компаниями:
+            </p>
+            <ul>
+                <li>Деловые Линии</li>
+                <li>Автотрейдинг</li>
+                <li>ЖелДорЭкспедиция</li>
+            </ul>
+            <a href="#">Подробнее о нас</a>
+        </section>
+        {# Контакты #}
+        <section>
+            <h2>Контакты</h2>
+            <p>
+                Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки.
+                Всякое бывает.
+            </p>
+            <img src="{% static 'image/device/map.jpg' %}" alt="Карта">
+            <a href="#">Напиши нам</a>
+        </section>
+    </main>
+
+    <footer>
+        <img src="{% static 'image/device/logo-footer.svg' %}" alt="логотип">
+        <p>г. Москва, ул. Строителей, 15</p>
+        <ul>
+            <li><a href="#">Войти</a></li>
+            <li><a href="#">Сравнить</a></li>
+            <li><a href="#">Корзина</a></li>
+        </ul>
+        <ul>
+            <li><a href="#">Доставка</a></li>
+            <li><a href="#">Гарантия</a></li>
+            <li><a href="#">Контакты</a></li>
+        </ul>
+        <p>Тел.: +7 (495) 495-95-95</p>
+        <ul>
+            <li>
+                <a href="#">
+                    <img src="{% static 'image/device/fb.svg' %}" alt="ss">
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <img src="{% static 'image/device/vk.svg' %}" alt="">
+                </a>
+            </li>
+            <li>
+                 <a href="#">
+                    <img src="{% static 'image/device/twitter.svg' %}" alt="">
+                </a>
+            </li>
+        </ul>
+        <img src="{% static 'image/device/logo-html.svg' %}" alt="">
+    </footer>
+
+</body>
+</html>
