@@ -17,6 +17,12 @@ body{
     background-repeat: no-repeat;
 }
 
+html,
+body{
+    min-width: 1122px;
+    min-height: 1750px;
+}
+
 a{
     text-decoration: none;
 }
@@ -65,10 +71,17 @@ a{
 }
 
 .features-list{
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+
     list-style: none;
 }
 
 .feature-item{
+    width: 300px;
+
     text-align: center;
 }
 
@@ -78,12 +91,18 @@ a{
 }
 
 .index-colums{
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 80px;
+    margin-bottom: 35px;
+
     color: #000000;
 
     background-color: #f8f5f2;
     background-image: url("/static/image/barber/pattern-light.png");
     background-position: 0 0;
     background-repeat: repeat;
+
 }
 
 .index-colums h2{
@@ -112,6 +131,9 @@ a{
 }
 
 .main-footer{
+    padding: 60px 0;
+    margin-top: 65px;
+
     color: #ffffff;
 
     background-color: #212121;
@@ -194,4 +216,86 @@ a{
 .restore:hover,
 .restore:focus{
     text-decoration: none;
+}
+
+.main-header{
+    margin-bottom: 75px;
+}
+
+.main-navigation{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-header-logo{
+    width: 368px;
+    height: 153px;
+}
+
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+
+    background-color: #000000;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.site-navigation{
+    width: 620px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation{
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.features{
+    margin-bottom: 80px;
+}
+
+.news {
+    width: 380px;
+}
+
+.gallery{
+    width: 300px;
+}
+
+.footer-contacts{
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-social{
+    width: 145px;
+}
+
+
+.footer-copyright{
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+}
+
+.main-footer .container{
+    display: flex;
 }

@@ -11,24 +11,31 @@
 </head>
 
 <body>
+
     <header class="main-header">
         <nav class="main-navigation">
-
-            <ul class="site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Новости</a></li>
-                <li><a href="#">Прайс-лист</a></li>
-                <li><a href="#">Магазин</a></li>
-                <li><a href="#">Контакты</a></li>
-            </ul>
-            <ul class="user-navigation">
-                <li><button class="button" type="button">Вход</button></li>
-            </ul>
+            <div class="main-navigation-wrapper">
+                <div class="container">
+                    <ul class="site-navigation">
+                        <li><a href="#">Новости</a></li>
+                        <li><a href="#">Прайс-лист</a></li>
+                        <li><a href="#">Магазин</a></li>
+                        <li><a href="#">Контакты</a></li>
+                    </ul>
+                    <ul class="user-navigation">
+                        <li><button class="button" type="button">Вход</button></li>
+                    </ul>
+                </div>
+            </div>
+            <a href="#" class="main-header-logo">
+                <img src="{% static 'image/barber/index-logo.svg' %}" alt="логотип барбершопа">
+            </a>
         </nav>
     </header>
+
     <main class="container">
         <h1 class="visual-hidden">Барбершоп "Бородински"</h1>
-        <img src="{% static 'image/barber/index-logo.svg' %}" alt="логотип барбершопа">
+
         <section class="features">
             <h2 class="visual-hidden">Преймущества</h2>
             <ul class="features-list">
@@ -49,6 +56,7 @@
                 </li>
             </ul>
         </section>
+
         <div class="index-colums">
             <section class="news">
                 <h3>Новости</h3>
@@ -77,6 +85,7 @@
                 <button class="button gallery-button gallery-button-next" type="button">Вперед</button>
             </section>
         </div>
+
         <div class="index-colums">
             <section class="contacts">
                 <h2>Контактная информация</h2>
@@ -119,29 +128,30 @@
                 <button class="button" type="submit">Отправить</button>
             </section>
         </div>
+
     </main>
 
     <footer class="main-footer">
-        <p class="footer-contacts">
-            Барбершоп "Бородинсикй" <br>
-            Адрес: г. Сант-Петербург, б.Конюшенка, д.19/8 <br>
-            <a href="#">Как нас найти?</a>
-            Телефон: + 7(495)666-02-66 <br>
-        </p>
-
-        <div class="footer-social">
-            <p>Давайте дружить!</p>
-            <ul>
-                <li><a href="#" class="social-button">Вконтакте</a></li>
-                <li><a href="#" class="social-button">Фейсбук</a></li>
-                <li><a href="#" class="social-button">Инстаграм</a></li>
-            </ul>
+        <div class="container">
+            <p class="footer-contacts">
+                Барбершоп "Бородинсикй" <br>
+                Адрес: г. Сант-Петербург, б.Конюшенка, д.19/8 <br>
+                <a href="#">Как нас найти?</a>
+                Телефон: + 7(495)666-02-66 <br>
+            </p>
+            <div class="footer-social">
+                <p>Давайте дружить!</p>
+                <ul>
+                    <li><a href="#" class="social-button">Вконтакте</a></li>
+                    <li><a href="#" class="social-button">Фейсбук</a></li>
+                    <li><a href="#" class="social-button">Инстаграм</a></li>
+                </ul>
+            </div>
+            <p class="footer-copyright">
+                Разработано:
+                <a href="#" class="button">ZarInk</a>
+            </p>
         </div>
-
-        <p class="footer-copyright">
-            Разработано:
-            <a href="#" class="button">ZarInk</a>
-        </p>
     </footer>
 
     <section class="modal modal-login">
