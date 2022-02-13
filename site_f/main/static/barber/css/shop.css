@@ -1,0 +1,386 @@
+body{
+
+    /*Отступи*/
+    padding: 0;
+    margin: 0;
+    /*Шрифты*/
+    font-family: 'PT Sans Narrow', Arial, sans-serif;
+    font-size: 14px;
+    line-height: 24px;
+    font-weight: 700;
+    color: white;
+    text-transform: uppercase;
+    /*Фон*/
+    background-color: rgb(199, 196, 196);
+    background-image: url("/static/image/barber/pattern-light.png");
+    background-position: top center;
+    background-repeat: repeat;
+}
+
+main{
+    color: black;
+}
+
+html,
+body{
+    min-width: 1200px;
+    min-height: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.visually-hidden:not(:focus):not(:active),
+input[type='checkbox'].visually-hidden,
+input[type='radio'].visually-hidden{
+    position: absolute;
+
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.main-header-logo{
+    width: 111px;
+    height: 24px;
+
+    display: block;
+    padding: 25px 20px;
+
+    vertical-align: middle;
+}
+
+.main-navigation{
+    font-size: 16px;
+    line-height: 20px;
+    color: white;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.main-navigation-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+
+    background-color: #000000;
+}
+
+.container{
+    width: 940px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+.main-navigation-wrapper .container{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.site-navigation{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 620px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation{
+    display: flex;
+
+    width: 140px;
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.user-navigation .login-link {
+    position: relative;
+    padding-left: 50px;
+}
+
+.login-link::before{
+    content: "";
+
+
+    position: absolute;
+    top: 27px;
+    left: 24px;
+
+    width: 16px;
+    height: 18px;
+
+    background-image: url("/static/image/barber/login.svg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+    opacity: 0.3;
+}
+
+.login-link:hover::before,
+.login-link:focus::before,
+.login-link:active::before{
+    opacity: 1;
+}
+
+.site-navigation,
+.user-navigation{
+    list-style: none;
+}
+
+.site-navigation-active{
+    border-bottom: 4px solid white;
+}
+
+.site-navigation a,
+.user-navigation a{
+    display: block;
+    padding: 25px 20px;
+
+    vertical-align: middle;
+    color: #ffffff;
+}
+
+.site-navigation li:hover,
+.site-navigation li:focus,
+.user-navigation li:hover,
+.user-navigation li:focus{
+    background-color: #242424;
+}
+
+/*---------content------------*/
+
+.breadcrumb-list{
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.breadcrumb-wrapper{
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+
+.goods-title{
+    margin-top: 57px;
+}
+
+/*----------------cheakbox---------------*/
+.makers-checkbox{
+    position: relative;
+
+    padding-left: 30px;
+
+    cursor: pointer;
+}
+
+.makers-checkbox:hover,
+.makers-checkbox:focus{
+    color: #663d15;
+}
+
+.makers-checkbox input[type='checkbox'] + .checkbox-indicator{
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 17px;
+    height: 17px;
+
+    border: 2px solid #000000;
+}
+
+.makers-checkbox input[type='checkbox']:focus + .checkbox-indicator{
+    border-color: #663d15;
+    outline: thin dotted;
+    outline: 5px auto -webkit-focus-ring-color;
+}
+
+.makers-checkbox input[type=checkbox]:checked + .checkbox-indicator::before,
+.makers-checkbox input[type=checkbox]:checked + .checkbox-indicator::after{
+    content: "";
+
+    position: absolute;
+    top: 8px;
+    left: 1px;
+
+    width: 15px;
+    height: 2px;
+
+    background-color: #000000;
+}
+
+.makers-checkbox input[type=checkbox]:checked + .checkbox-indicator::before{
+    transform: rotate(45deg);
+}
+
+.makers-checkbox input[type=checkbox]:checked + .checkbox-indicator::after{
+    transform: rotate(-45deg);
+}
+
+/*----------button--------------*/
+.button{
+    display: inline-block;
+    margin-right: 16px;
+    padding: 10px 30px;
+
+    font: inherit;
+    text-align: center;
+    color: #ffffff;
+    vertical-align: middle;
+    text-transform: uppercase;
+
+    background-color: #000000;
+    border: none;
+}
+
+.button:hover,
+.button:active,
+.button:focus{
+    background-color: #663d15;
+}
+
+.button.disabled,
+.button:disabled{
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+.button-show{
+    margin-top: 50px;
+}
+/*-------footer--------*/
+
+
+.main-footer{
+    padding: 60px 0;
+    margin-top: 65px;
+
+    color: #ffffff;
+
+    background-color: #212121;
+    background-image: url("/static/image/barber/pattern-dark.png");
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+
+.footer-contacts a {
+    color: #ffffff;
+    text-decoration: underline;
+}
+
+.footer-contacts a:hover,
+.footer-contacts a:focus{
+    text-decoration: none;
+}
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 141px;
+    margin: 0 auto;
+    padding: 0;
+
+    list-style: none;
+}
+
+.footer-social b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.footer-copyright .button{
+    display: block;
+    margin-right: 0;
+}
+
+.footer-copyright b {
+    display: block;
+    margin-bottom: 15px;
+}
+
+.social-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 43px;
+    height: 43px;
+    margin-bottom: 10px;
+
+    color: #ffffff;
+    background-color: #000000;
+}
+
+.social-button:hover,
+.social-button:focus{
+    background-color: #ffffff;
+}
+
+.social-button:hover path,
+.social-button:focus path{
+    fill: #000000;
+}
+
+.footer-copyright{
+    text-align: center;
+}
+
+.footer-copyright .button:hover,
+.footer-copyright .button:focus{
+    color: #000000;
+
+    background-color: #ffffff;
+}
+
+
+.footer-contacts{
+    width: 320px;
+    margin: 0;
+    margin-right: 80px;
+}
+
+.footer-social{
+    width: 145px;
+}
+
+
+.footer-copyright{
+    width: 150px;
+    margin: 0;
+    margin-left: auto;
+}
+
+.main-footer .container{
+    display: flex;
+}
