@@ -190,22 +190,102 @@ input[type='radio'].visually-hidden{
     margin-top: 57px;
 }
 
+.makers-title{
+    margin-top: 0;
+    margin-bottom: 18px;
+}
+
 .filter-list{
     min-width: 168px;
 }
 
-.catalog-wrapper{
-    margin-left: 72px;
-}
-
 .content{
     display: flex;
-    flex-wrap: wrap;
 }
 
 .catalog-wrapper{
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.goods-card{
+    width: 220px;
+    height: 288px;
+
+    margin-bottom: 15px;
+
+    background-color: white;
+}
+
+.catalog{
+    margin-left: 73px;
+}
+
+.goods-card-image{
+    height: 166px;
+    width: 100%;
+}
+
+.goods-card-title{
+    text-transform: none;
+    line-height: normal;
+    margin-left: 16px;
+    margin-top: 4px;
+    margin-bottom: 18px;
+
+}
+
+
+
+.price-block{
+    width: 188px;
+    height: 44px;
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 18px;
+}
+
+.price{
+    width: 110px;
+    height: 44px;
+    margin: 0;
+
+    line-height: 44px;
+    text-align: center;
+    background-color: rgba(204, 204, 204, 0.3);
+
+}
+.price-button{
+    width: 70px;
+    height: 44px;
+    padding: 0;
+    margin: 0;
+
+    text-align: center;
+    line-height: 44px;
+
+    background-color: black;
+
+}
+
+.price-button:hover,
+.price-button:active,
+.price-button:focus{
+    background-color: #663d15;
+}
+
+.price-button.disabled,
+.price-button:disabled{
+    cursor: default;
+    opacity: 0.5;
+    background-color: #000000;
+}
+
+.price-block a{
+    color: #ffffff;
 }
 
 /*--------------------radio----------------*/
