@@ -322,19 +322,51 @@ input[type='radio'].visually-hidden{
 {
     color: #cccccc;
 }
+
+/*--------------------pagination----------------*/
+
+.pagination{
+    margin-top: 30px;
+    margin-left: 240px;
+    display: inline-block;
+
+}
+
+.page{
+    font-size: inherit;
+    color: white;
+    padding: 8px 16px;
+    float: left;
+    margin: 0 4px;
+    margin-bottom: 10px;
+
+    background-color: black;
+}
+
+.current-page{
+    color: black;
+    background-color: white;
+}
+
+.page:hover:not(.current-page){
+    background-color: #663d15;
+}
+
+
 /*--------------------radio----------------*/
 
 .goods-group-radio {
-  display: block;
-  position: relative;
-  padding-left: 35px;
-  margin-bottom: 12px;
-  cursor: pointer;
-  font-size: inherit;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: inherit;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+
 }
 
 /* Hide the browser's default radio button */
