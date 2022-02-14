@@ -170,21 +170,7 @@ input[type='radio'].visually-hidden{
 
 /*---------content------------*/
 
-.breadcrumb-list{
-    display: flex;
-    flex-wrap: wrap;
 
-    margin: 0;
-    padding: 0;
-
-    list-style: none;
-}
-
-.breadcrumb-wrapper{
-    width: 100%;
-    margin-bottom: 60px;
-
-}
 
 .goods-title{
     margin-top: 57px;
@@ -288,6 +274,54 @@ input[type='radio'].visually-hidden{
     color: #ffffff;
 }
 
+/*--------------------breadcrumb----------------*/
+.breadcrumb-wrapper{
+    margin-bottom: 60px;
+
+}
+
+.breadcrumb {
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+.breadcrumb-item {
+    display: inline;
+    justify-content: space-between;
+    font-size: inherit;
+    margin-right: 20px;
+
+}
+.breadcrumb-item + li::before {
+
+    display: inline-flex;
+    position: relative;
+
+    right: 10px;
+
+    content: '';
+    /*position: relative;*/
+
+    width: 10px;
+    height: 10px;
+
+    background-color: black;
+    transform: rotate(45deg);
+}
+.breadcrumb-item a {
+  color: black;
+  text-decoration: none;
+}
+.breadcrumb-item a:hover {
+    color: #663d15;
+}
+
+.breadcrumb-current-position a,
+.breadcrumb-current-position a:hover
+{
+    color: #cccccc;
+}
 /*--------------------radio----------------*/
 
 .goods-group-radio {
