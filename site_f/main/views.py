@@ -15,6 +15,10 @@ def barber_shop(request):
     return render(request, 'barber/shop.html')
 
 
+def barber_price(request):
+    return render(request, 'barber/price.html')
+
+
 # device
 def index_device(request):
     return render(request, 'device/index.html')
