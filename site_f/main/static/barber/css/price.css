@@ -106,3 +106,18 @@
 .coast{
     text-align: center;
 }
+
+.about h2{
+    font-size: 20px;
+    line-height: 32px;
+    margin-bottom: 40px;
+}
+
+.about-colum{
+    display: flex;
+}
+
+.about-colum p{
+    margin-right: 40px;
+    width: 50%;
+}
