@@ -131,7 +131,9 @@
             <section class="catalog">
                 <div class="catalog-wrapper">
                     <div class="goods-card">
-                        <img class="goods-card-image" src="{% static 'image/barber/shop/goods_1.png' %}" alt="Сумка">
+                        <a href="{% url 'barber_item' %}">
+                            <img class="goods-card-image" src="{% static 'image/barber/shop/goods_1.png' %}" alt="Сумка">
+                        </a>
                         <h4 class="goods-card-title">Набор для путишествий <br>"BAXTER OF CALIFORNIA"</h4>
                         <div class="price-block">
                             <span class="price">2 900 uah</span>

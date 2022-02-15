@@ -19,6 +19,10 @@ def barber_price(request):
     return render(request, 'barber/price.html')
 
 
+def barber_item(request):
+    return render(request, 'barber/item.html')
+
+
 # device
 def index_device(request):
     return render(request, 'device/index.html')
