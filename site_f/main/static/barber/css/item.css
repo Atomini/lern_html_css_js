@@ -1,3 +1,8 @@
+p{
+    font-size: 14px;
+    line-height: 24px;
+}
+
 .item-collums{
     display: flex;
     justify-content: space-between;
@@ -40,4 +45,59 @@
 
 .image{
     width: 100%;
+}
+
+.item-description{
+    margin-left: 90px;
+}
+
+.text-grey{
+    color: #cccccc;
+}
+
+.stock-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+    margin-bottom: 40px;
+
+}
+
+.buy{
+    display: flex;
+    
+    margin-top: 40px;
+    margin-bottom: 70px;
+}
+
+.list{
+    font-size: inherit;
+
+    padding: 0;
+    margin-left: 12px;
+    margin-bottom: 20px;
+
+    list-style: none;
+}
+
+.list-item{
+    margin-bottom: 5px;
+}
+
+.list-item::before{
+    display: inline-flex;
+    position: relative;
+
+    right: 10px;
+
+    content: '';
+    /*position: relative;*/
+
+    width: 10px;
+    height: 10px;
+
+
+    background-color: black;
+    transform: rotate(45deg);
 }
