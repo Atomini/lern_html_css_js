@@ -1,0 +1,43 @@
+.item-collums{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.gallery{
+    width: 50%;
+}
+
+.item-description{
+    width: 50%;
+    margin-left: 40px;
+}
+
+.main-img{
+    width: 480px;
+    height: 520px;
+
+}
+
+.mini-img-wrapper{
+    display: flex;
+    flex-wrap: wrap;
+
+    width: 480px;
+    height: auto;
+
+    margin-top: 20px;
+
+    justify-content: space-between;
+
+}
+
+.mini-img{
+    width: 160px;
+    height: 160px;
+
+}
+
+.image{
+    width: 100%;
+}
