@@ -1,45 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
 {% load static %}
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{% static 'device/css/normalize.css' %}">
+<link rel="stylesheet" href="{% static 'device/css/index.css' %}">
+<link rel="stylesheet" href="{% static 'device/css/nav.css' %}">
+
 <head>
     <meta charset="UTF-8">
     <title>Device</title>
 </head>
-<body>
-    <header>
-        <img src="{% static 'image/device/logo.png' %}" alt="Логотип Девайс">
-        <ul>
-            <li>
-                <input type="search" placeholder="Поиск по сайту"  >
-            </li>
-            <li>
-                <a href="#" >Войти</a>
-            </li>
-            <li>
-                <a href="#">Сравнить</a>
-            </li>
-            <li>
-                <a href="#">Корзина</a>
-            </li>
-        </ul>
-    </header>
-    <nav>
-        <ul>
-            <li>Каталог товаров</li>
-            <li>Доставка</li>
-            <li>Гарантия</li>
-            <li>Контвакты</li>
-        </ul>
-        <ul>
-            <li>Виртуальная реальность</li>
-            <li>Моноподы для селфи</li>
-            <li>Экшн-камеры</li>
-            <li>Фитнес-браслеты</li>
-            <li>Умные часы</li>
-            <li>Квадрокоптеры</li>
-        </ul>
-    </nav>
 
+<body>
+
+    <header>
+
+        <nav class="nav-bar">
+            <img class="nav-logo" src="{% static 'image/device/logo.png' %}" alt="Логотип Девайс">
+            <div class="nav-top-wrapper">
+                <div class="search-wrap">
+                    <input class="search-input" type="search" placeholder="Поиск по сайту"  >
+                </div>
+                <div class="login">
+                    <a href="#" >Войти</a>
+                </div>
+                <div class="compare">
+                    <a href="#">Сравнить</a>
+                </div>
+                <div class="cart">
+                    <a href="#">Корзина</a>
+                </div>
+            </div>
+
+            <ul>
+                <li>Каталог товаров</li>
+                <li>Доставка</li>
+                <li>Гарантия</li>
+                <li>Контвакты</li>
+            </ul>
+            <ul>
+                <li>Виртуальная реальность</li>
+                <li>Моноподы для селфи</li>
+                <li>Экшн-камеры</li>
+                <li>Фитнес-браслеты</li>
+                <li>Умные часы</li>
+                <li>Квадрокоптеры</li>
+            </ul>
+        </nav>
+    </header>
     <main>
         {#слайдер#}
         <section>
