@@ -5,6 +5,7 @@
 <link rel="stylesheet" href="{% static 'device/css/normalize.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/index.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/nav.css' %}">
+<link rel="stylesheet" href="{% static 'device/css/slider.css' %}">
 
 <head>
     <meta charset="UTF-8">
@@ -12,9 +13,7 @@
 </head>
 
 <body>
-
     <header>
-
         <nav class="nav-bar">
             <img class="nav-logo" src="{% static 'image/device/logo.png' %}" alt="Логотип Девайс">
             <div class="nav-top-wrapper">
@@ -33,14 +32,14 @@
             </div>
 
             <ul class="navigation-line font-gilroy-extrabold">
-                <a href="#">
+                <button class="catalog-button font-gilroy-extrabold" type="button">
                     <li class="catalog-list">Каталог товаров</li>
-                </a>
+                </button>
                 <li class="delivery-list"><a href="#">Доставка</a></li>
                 <li class="garant-list"><a href="#">Гарантия</a></li>
                 <li><a href="#">Контакты</a></li>
             </ul>
-            <ul class="catalog-hidden">
+            <ul class="catalog-hidden visually-hidden">
                 <li>Виртуальная реальность</li>
                 <li>Моноподы для селфи</li>
                 <li>Экшн-камеры</li>
@@ -55,67 +54,105 @@
     </header>
     <main>
         {#слайдер#}
-        <section>
-            <div>
-                <img src="{% static 'image/device/slider-1.png' %}" alt="Селфи палка">
-                <h2>
-                    Делай селфи, <br>
-                    как Бен Стиллер!
-                </h2>
-                <p>
-                    Самая длинная палка для селфи доступна в нашем магазине.
-                    Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
-                </p>
-                <a href="#">Подробнее</a>
-                <table>
-                    <tr>
-                        <td>8.5 м</td>
-                        <td>5 кг</td>
-                        <td>Карбон</td>
-                    </tr>
-                    <tr>
-                        <td>Длина палки</td>
-                        <td>Вес палки</td>
-                        <td>Материал</td>
-                    </tr>
-                </table>
+        <section class="slider">
+            <div class="slide">
+                <div class="img-wrap">
+                    <img class="slide-img" src="{% static 'image/device/slider-1.png' %}" alt="Селфи палка">
+                </div>
+                <div class="descript-wrapp">
+                    <span class="slide-number">01</span>
+                    <h2 class="slider-title">
+                        Делай селфи, <br>
+                        как Бен Стиллер!
+                    </h2>
+                    <p class="slider-text">
+                        Самая длинная палка для селфи доступна в нашем магазине. <br>
+                        Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.
+                    </p>
+                    <div class="slider-navigation-block">
+                        <a href="#">Подробнее</a>
+                        <ul class="slider-position">
+                            <li class="pos">0</li>
+                            <li class="pos current">0</li>
+                            <li class="pos">0</li>
+                        </ul>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>8.5 м</td>
+                            <td>5 кг</td>
+                            <td>Карбон</td>
+                        </tr>
+                        <tr>
+                            <td>Длина палки</td>
+                            <td>Вес палки</td>
+                            <td>Материал</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div>
-                <img src="{% static 'image/device/slider-2.png' %}" alt="Фитнес браслет">
-                <h2>
-                    Худеем правильно!
-                </h2>
-                <p>
-                    Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
-                    не пропускать занятия и соблюдать диету.
-                </p>
-                <a href="#">Подробнее</a>
-                <table>
-                    <tr>
-                        <td>48 часов</td>
-                    </tr>
-                    <tr>
-                        <td>Без подзарядки</td>
-                    </tr>
-                </table>
+
+            <div class="slide">
+                <div class="img-wrap">
+                    <img class="slide-img" src="{% static 'image/device/slider-2.png' %}" alt="Фитнес браслет">
+                </div>
+                <div class="descript-wrapp">
+                    <span class="slide-number">02</span>
+                    <h2 class="slider-title">
+                        Худеем правильно!
+                    </h2>
+                    <p class="slider-text">
+                        Мотивирующие фитнес-браслеты помогут найти в себе силы <br>
+                        не пропускать занятия и соблюдать диету.
+                    </p>
+                    <div class="slider-navigation-block">
+                        <a href="#">Подробнее</a>
+                        <ul class="slider-position">
+                            <li class="pos">0</li>
+                            <li class="pos current">0</li>
+                            <li class="pos">0</li>
+                        </ul>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>48 часов</td>
+                        </tr>
+                        <tr>
+                            <td>Без подзарядки</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
-            <div>
-                <img src="{% static 'image/device/slider-3.png' %}" alt="Квадрокоптер">
-                <h2>
-                    Порхает как бабочка, <br>
-                    жалит как пчела!
-                </h2>
-                <a href="#">Подробнее</a>
-                <table>
-                    <tr>
-                        <td>800 м</td>
-                        <td>Дальность полета</td>
-                    </tr>
-                    <tr>
-                        <td>50 м</td>
-                        <td>Радиус поражения</td>
-                    </tr>
-                </table>
+
+            <div class="slide">
+                <div class="img-wrap">
+                    <img class="slide-img" src="{% static 'image/device/slider-3.png' %}" alt="Квадрокоптер">
+                </div>
+                <div class="descript-wrapp">
+                    <span class="slide-number">02</span>
+                    <h2 class="slider-title">
+                        Порхает как бабочка, <br>
+                        жалит как пчела!
+                    </h2>
+                    <div class="slider-navigation-block">
+                        <a href="#">Подробнее</a>
+                        <ul class="slider-position">
+                            <li class="pos">0</li>
+                            <li class="pos current">0</li>
+                            <li class="pos">0</li>
+                        </ul>
+                    </div>
+                    <table>
+                        <tr>
+                            <td>800 м</td>
+                            <td>Дальность полета</td>
+                        </tr>
+                        <tr>
+                            <td>50 м</td>
+                            <td>Радиус поражения</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
         </section>
         {# Форма письма #}
