@@ -8,6 +8,14 @@
 
 }
 
+.nav-logo:hover{
+    opacity: 0.5;
+}
+
+.nav-logo:active{
+    opacity: 0.2;
+}
+
 .nav-bar{
     min-height: 300px;
     width: 1160px;
@@ -50,12 +58,46 @@
     background: transparent;
     border: none;
     font: inherit;
+    opacity: 0.3;
+    width: 400px;
+
+    padding: 0;
+    padding-bottom: 4px;
+}
+
+.search-input:hover{
+    opacity: 0.5;
+}
+
+.search-input:focus{
+    outline: none;
+    border-bottom: 3px solid black;
+    opacity: 1;
+}
+
+.search-button{
+    background: transparent;
+    padding: 10px;
+    border: 3px solid black;
+
+    position: relative;
+    right: 5px;
+}
+
+.search-button:hover{
+    background: black;
+    color: white;
+}
+
+.search-button:active{
+    color: #cccccc;
 }
 
 .login{
     position: relative;
     padding-left: 50px;
     width: 280px;
+    padding-top: 5px;
 
 }
 
@@ -63,7 +105,7 @@
     content: "";
 
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 24px;
 
     width: 18px;
@@ -78,13 +120,14 @@
 .cart{
     position: relative;
     padding-left: 50px;
+    padding-top: 5px;
 }
 
 .compare::before{
     content: "";
 
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 24px;
 
     width: 18px;
@@ -99,7 +142,7 @@
     content: "";
 
     position: absolute;
-    top: 8px;
+    top: 13px;
     left: 24px;
 
     width: 18px;
@@ -141,7 +184,7 @@
 
 .delivery-list{
     position: relative;
-    right: -148px;
+    right: -142px;
     
 }
 
@@ -171,5 +214,22 @@
     font-family: inherit;
     background: transparent;
     border: 0;
+}
+
+a.link:active,
+a.link:hover,
+a.link{
+    text-decoration: none;
+    color: black;
+}
+
+a.link:hover,
+button.catalog-button:hover{
+    opacity: 0.5;
+}
+
+a.link:active,
+button.catalog-button:active{
+    opacity: 0.2;
 }
 
