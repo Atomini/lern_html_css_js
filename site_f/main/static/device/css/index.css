@@ -3,6 +3,7 @@
     src: url("/static/device/font/gilroyextrabold.woff2");
     font-weight: normal;
     font-style: normal;
+
 }
 
 body{
@@ -61,10 +62,56 @@ input[type='radio'].visually-hidden{
     font-size: 18px;
     line-height: 24px;
     font-weight: 700;
+    letter-spacing: 2px;
     color: black;
     text-transform: uppercase;
 
 }
 
+/*Кнопки*/
+a.button:active,
+a.button:hover,
+a.button{
+    text-decoration: none;
+    color: black;
+}
 
+.button{
+    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+    font-size: 20px;
+    line-height: 40px;
+    letter-spacing: 3px;
+
+    height: 40px;
+    width: 220px;
+
+    text-align: center;
+
+    text-transform: uppercase;
+    display: inline-block;
+    position: relative;
+}
+
+
+.button::before{
+    content: '';
+    position: absolute;
+
+    left: 0;
+    top: 16px;
+
+    width: 100%;
+    height: 8px;
+
+    background: #f0c52e;
+    z-index: -1;
+}
+
+.button:active{
+    opacity: 0.5;
+}
+
+.button:hover{
+    background: #f0c52e;
+}
 
