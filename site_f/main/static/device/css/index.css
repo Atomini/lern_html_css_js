@@ -211,5 +211,29 @@ a.button{
     margin-top: 40px;
 }
 
+.firm-logo-wrap{
+    list-style: none;
+
+    width: 1280px;
+
+    margin: 0 auto;
+    margin-bottom: 80px;
+    padding: 0;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.firm-logo{
+    filter: grayscale(100%);
+    opacity: 0.5;
+}
+
+.firm-logo:hover{
+    filter: none;
+    opacity: 1;
+}
+
 
 
