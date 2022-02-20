@@ -9,6 +9,9 @@
 
 .slide-img{
     width: 500px;
+    height: 500px;
+    object-fit: scale-down;
+
 }
 
 .slide{
@@ -37,7 +40,7 @@
     line-height: 56px;
     letter-spacing: 3px;
 
-    padding-top: 44px;
+    padding-top: 54px;
     margin: 0;
 
     position: relative;

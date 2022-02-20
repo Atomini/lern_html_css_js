@@ -90,6 +90,8 @@ a.button{
     text-transform: uppercase;
     display: inline-block;
     position: relative;
+
+    z-index: 1;
 }
 
 
@@ -114,6 +116,7 @@ a.button{
 .button:hover{
     background: #f0c52e;
 }
+
 
 .popular{
     width: 1280px;
@@ -193,7 +196,7 @@ a.button{
 .popular-image-6{
     width: 132px;
     position: relative;
-    left: 23px;
+    left: 16px;
     top: 50px;
 }
 

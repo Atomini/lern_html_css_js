@@ -1,0 +1,133 @@
+.services{
+    width: 100%;
+    min-height: 288px;
+
+    margin: 0 auto;
+    margin-top: 180px;
+    padding: 0;
+
+
+    background-color: #e5e5e5;
+    z-index: auto;
+}
+
+.services-wrapper{
+    
+    position: relative;
+    top: -100px;
+    
+    width: 1280px;
+    padding: 0;
+
+    margin: 0 auto;
+
+    display: flex;
+    align-items: baseline;
+}
+
+.services-colum-menu{
+    width: 278px;
+    min-height: 319px;
+
+    border-right: 7px solid black;
+    
+}
+
+.services-colum-menu.button{
+    width: 160px;
+    background-color: transparent;
+    z-index: 1;
+
+}
+
+.delivery-button{
+    margin-top: 80px;
+    background-color: transparent;
+    border: none;
+    width: 160px;
+    padding-left: 10px;
+    text-align: left;
+
+}
+
+.credit-button,
+.garanty-button{
+    margin-top: 40px;
+    background-color: transparent;
+    border: none;
+    width: 160px;
+    padding-left: 10px;
+    text-align: left;
+}
+
+.services-colum{
+    margin-left: 120px;
+
+
+}
+
+.credit-button:active,
+.garanty-button:active,
+.delivery-button:active{
+    width: 102%;
+    background-color: black;
+    color: #f0c52e;
+    opacity: 1;
+    text-align: left;
+    border: none;
+}
+
+.credit-button:active::before,
+.garanty-button:active::before,
+.delivery-button:active::before{
+    background-color: black;
+}
+
+.current-services{
+    width: 102%;
+    background-color: black;
+    color: #f0c52e;
+}
+
+.current-services::before{
+    background-color: black;
+}
+
+.current-services:hover{
+    background-color: black;
+    color: #f0c52e;
+}
+
+.services-colum-menu.button{
+    text-decoration: transparent;
+    text-align: center;
+
+}
+
+.services-title{
+    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+    font-size: 47px;
+    line-height: 48px;
+
+    position: relative;
+    top: 7px;
+}
+
+.services-description{
+    font-size: 15px;
+    line-height: 30px;
+    margin-top: 40px;
+
+    width: 430px;
+}
+
+.services-colum{
+    display: flex;
+}
+
+.services-logo{
+    height: 200px;
+    position: relative;
+    top: 50px;
+    left: 270px;
+}

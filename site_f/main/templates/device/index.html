@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="{% static 'device/css/index.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/nav.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/slider.css' %}">
+<link rel="stylesheet" href="{% static 'device/css/services.css' %}">
 
 <head>
     <meta charset="UTF-8">
@@ -99,7 +100,7 @@
                     </table>
                 </div>
             </div>
-            <div class="slide visually-hidden">
+            <div class="slide ">
                 <div class="img-wrap">
                     <img class="slide-img" src="{% static 'image/device/slider-2.png' %}" alt="Фитнес браслет">
                 </div>
@@ -130,7 +131,7 @@
                     </table>
                 </div>
             </div>
-            <div class="slide">
+            <div class="slide visually-hidden">
                 <div class="img-wrap">
                     <img class="slide-img" src="{% static 'image/device/slider-3.png' %}" alt="Квадрокоптер">
                 </div>
@@ -226,36 +227,44 @@
             </ul>
         </section>
         {# Услуги #}
-        <section>
-            <h1>Услуги</h1>
-            <button type="button">Доставка</button>
-            <button type="button">Гарантия</button>
-            <button type="button">Кредит</button>
-            <ul>
-                <li>
-                    <h2>Доставка</h2>
-                    <p>
-                        Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
-                        неплохо заработаем, поднимая его на ваш этаж.
-                    </p>
-                    <img src="{% static 'image/device/delivery.png' %}" alt="Доставка">
-                </li>
-                <li>
-                    <h2>Гарантия</h2>
-                    <p>
-                        Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам 
-                        новый. Товар, не дом, конечно же.
-                    </p>
-                    <img src="{% static 'image/device/warranty.svg' %}" alt="Гарантия">
-                </li>
-                <li>
-                    <h2>Кредит</h2>
-                    <p>
-                        Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
-                        условия кредита. Выгодные для нашего банка, разумеется.</p>
-                    <img src="{% static 'image/device/credit.svg' %}" alt="Кредит лого">
-                </li>
-            </ul>
+        <section class="services">
+            <div class="services-wrapper">
+                <h1 class="visually-hidden">Услуги</h1>
+                <div class="services-colum-menu">
+                    <button class="button delivery-button current-services" type="button">Доставка</button>
+                    <button class="button garanty-button" type="button">Гарантия</button>
+                    <button class="button credit-button" type="button">Кредит</button>
+                </div>
+                <div class="services-colum ">
+                    <div class="description">
+                        <h2 class="services-title">Доставка</h2>
+                        <p class="services-description">
+                            Мы с удовольствием доставим ваш товар прямо к вашему подъезду совершенно бесплатно! Ведь мы
+                            неплохо заработаем, поднимая его на ваш этаж.
+                        </p>
+                    </div>
+                    <img class="services-logo" src="{% static 'image/device/delivery.png' %}" alt="Доставка">
+                </div>
+                <div class="services-colum visually-hidden">
+                    <div class="description">
+                        <h2 class="services-title">Гарантия</h2>
+                        <p class="services-description">
+                            Если из-за возгорания купленного у нас товара у вас сгорит дом — не переживайте, мы выдадим вам
+                            новый. Товар, не дом, конечно же.
+                        </p>
+                    </div>
+                    <img class="services-logo" src="{% static 'image/device/warranty.svg' %}" alt="Гарантия">
+                </div>
+                <div class="services-colum visually-hidden">
+                    <div class="description">
+                        <h2 class="services-title" >Кредит</h2>
+                        <p class="services-description">
+                            Залезть в долговую яму стало проще! Кредитные консультанты подберут для вас наиболее выгодные
+                            условия кредита. Выгодные для нашего банка, разумеется.</p>
+                    </div>
+                    <img class="services-logo" src="{% static 'image/device/credit.svg' %}" alt="Кредит лого">
+                </div>
+            </div>
         </section>
         {# логотипи #}
         <section>
