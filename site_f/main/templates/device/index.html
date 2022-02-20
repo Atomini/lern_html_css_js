@@ -63,7 +63,7 @@
     <main>
         {#слайдер#}
         <section class="slider">
-            <div class="slide">
+            <div class="slide visually-hidden">
                 <div class="img-wrap">
                     <img class="slide-img" src="{% static 'image/device/slider-1.png' %}" alt="Селфи палка">
                 </div>
@@ -99,8 +99,7 @@
                     </table>
                 </div>
             </div>
-
-            <div class="slide">
+            <div class="slide visually-hidden">
                 <div class="img-wrap">
                     <img class="slide-img" src="{% static 'image/device/slider-2.png' %}" alt="Фитнес браслет">
                 </div>
@@ -131,13 +130,12 @@
                     </table>
                 </div>
             </div>
-
             <div class="slide">
                 <div class="img-wrap">
                     <img class="slide-img" src="{% static 'image/device/slider-3.png' %}" alt="Квадрокоптер">
                 </div>
                 <div class="descript-wrapp">
-                    <span class="slide-number">02</span>
+                    <span class="slide-number">03</span>
                     <h2 class="slider-title">
                         Порхает как бабочка, <br>
                         жалит как пчела!
@@ -167,46 +165,63 @@
                 </div>
             </div>
         </section>
-        {# Форма письма #}
-        <section>
-            <form action="POST">
-                <lable>Ваше имя:</lable>
-                <input type="text" placeholder="Имя Фамилия">
-                <lable>Ваш e-mail:</lable>
-                <input type="text" placeholder="email@example.com">
-                <lable>Текст письма:</lable>
-                <input type="text" placeholder="В свободной форме">
-                <button type="submit">Отправить</button>
-
-            </form>
-        </section>
         {# Популярные #}
-        <section>
-            <h1>Популярное</h1>
-            <ul>
-                <li>
-                    <img src="{% static 'image/device/popular-1.svg' %}" alt="лого VR">
-                    <p>Виртуальная реальность</p>
+        <section class="popular">
+            <h1 class="visually-hidden">Популярное</h1>
+            <ul class="popular-list">
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img  class="popular-image-1" src="{% static 'image/device/popular-1.svg' %}"
+                              alt="лого Виртуальная реальность">
+                        </div>
+                        <p class="popular-description">Виртуальная реальность</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="{% static 'image/device/popular-2.svg' %}" alt="лого VR">
-                    <p>Моноподы для селфи</p>
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img class="popular-image-2" src="{% static 'image/device/popular-2.svg' %}"
+                                 alt="лого Моноподы для селфи">
+                        </div>
+                        <p class="popular-description">Моноподы для селфи</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="{% static 'image/device/popular-3.svg' %}" alt="лого VR">
-                    <p>Экшн-камеры</p>
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img class="popular-image-3" src="{% static 'image/device/popular-3.svg' %}"
+                                 alt="лого Экшн-камеры">
+                        </div>
+                        <p class="popular-description">Экшн-камеры</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="{% static 'image/device/popular-4.svg' %}" alt="лого VR">
-                    <p>Фитнес-браслеты</p>
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img class="popular-image-4" src="{% static 'image/device/popular-4.svg' %}"
+                                 alt="лого Фитнес-браслеты">
+                        </div>
+                        <p class="popular-description">Фитнес-браслеты</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="{% static 'image/device/popular-5.svg' %}" alt="лого VR">
-                    <p>Умные часы</p>
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img class="popular-image-5" src="{% static 'image/device/popular-5.svg' %}"
+                                 alt="лого Умные часы">
+                        </div>
+                        <p class="popular-description">Умные часы</p>
+                    </a>
                 </li>
-                <li>
-                    <img src="{% static 'image/device/popular-6.svg' %}" alt="лого VR">
-                    <p>Квадрокоптеры</p>
+                <li class="popular-item">
+                    <a href="#">
+                        <div class="popular-image-wrapper">
+                            <img class="popular-image-6" src="{% static 'image/device/popular-6.svg' %}"
+                                 alt="лого Квадрокоптеры">
+                        </div>
+                        <p class="popular-description">Квадрокоптеры</p>
+                    </a>
                 </li>
             </ul>
         </section>
@@ -313,6 +328,20 @@
         </ul>
         <img src="{% static 'image/device/logo-html.svg' %}" alt="">
     </footer>
+
+        {# Форма письма #}
+        <section>
+            <form action="POST">
+                <lable>Ваше имя:</lable>
+                <input type="text" placeholder="Имя Фамилия">
+                <lable>Ваш e-mail:</lable>
+                <input type="text" placeholder="email@example.com">
+                <lable>Текст письма:</lable>
+                <input type="text" placeholder="В свободной форме">
+                <button type="submit">Отправить</button>
+
+            </form>
+        </section>
 
 </body>
 </html>

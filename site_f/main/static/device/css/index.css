@@ -115,3 +115,98 @@ a.button{
     background: #f0c52e;
 }
 
+.popular{
+    width: 1280px;
+
+    margin: 0 auto;
+    padding: 0;
+}
+
+.popular-list{
+    list-style: none;
+
+    padding: 0;
+    margin-top: 80px;
+    margin-bottom: 80px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.popular-item{
+    width: 160px;
+}
+
+.popular-item p{
+
+    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    color: black;
+}
+
+.popular-image-wrapper:hover{
+    background-color: #f0c52e;
+}
+
+.popular-item:active{
+    opacity: 0.5;
+
+}
+
+.popular-image-1{
+    width: 100px;
+    position: relative;
+    left: 30px;
+    top: 50px;
+}
+
+.popular-image-2{
+    width: 90px;
+    position: relative;
+    left: 35px;
+    top: 38px;
+}
+
+.popular-image-3{
+    width: 71px;
+    position: relative;
+    left: 45px;
+    top: 40px;
+}
+
+.popular-image-4{
+    width: 107px;
+    position: relative;
+    left: 28px;
+    top: 55px;
+}
+
+.popular-image-5{
+    width: 56px;
+    position: relative;
+    left: 55px;
+    top: 33px;
+}
+
+.popular-image-6{
+    width: 132px;
+    position: relative;
+    left: 23px;
+    top: 50px;
+}
+
+
+.popular-image-wrapper{
+    background-color: #f7e296;
+    width: 160px;
+    height: 160px;
+}
+
+.popular-description{
+    margin-top: 40px;
+}
+
+
+
