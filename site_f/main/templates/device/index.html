@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="{% static 'device/css/nav.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/slider.css' %}">
 <link rel="stylesheet" href="{% static 'device/css/services.css' %}">
+<link rel="stylesheet" href="{% static 'device/css/footer.css' %}">
 
 <head>
     <meta charset="UTF-8">
@@ -315,37 +316,52 @@
     </main>
 
     <footer>
-        <img src="{% static 'image/device/logo-footer.svg' %}" alt="логотип">
-        <p>г. Москва, ул. Строителей, 15</p>
-        <ul>
-            <li><a href="#">Войти</a></li>
-            <li><a href="#">Сравнить</a></li>
-            <li><a href="#">Корзина</a></li>
-        </ul>
-        <ul>
-            <li><a href="#">Доставка</a></li>
-            <li><a href="#">Гарантия</a></li>
-            <li><a href="#">Контакты</a></li>
-        </ul>
-        <p>Тел.: +7 (495) 495-95-95</p>
-        <ul>
-            <li>
-                <a href="#">
-                    <img src="{% static 'image/device/fb.svg' %}" alt="ss">
-                </a>
-            </li>
-            <li>
-                <a href="#">
-                    <img src="{% static 'image/device/vk.svg' %}" alt="">
-                </a>
-            </li>
-            <li>
-                 <a href="#">
-                    <img src="{% static 'image/device/twitter.svg' %}" alt="">
-                </a>
-            </li>
-        </ul>
-        <img src="{% static 'image/device/logo-html.svg' %}" alt="">
+        <div class="footer-container">
+        <div class="footer-row-nav">
+            <img class="footer-logo" src="{% static 'image/device/logo-footer.png' %}" alt="логотип">
+            <div class="footer-nav-container">
+                <div class="footer-login">
+                    <a class="footer-link" href="#" >Войти</a>
+                </div>
+                <div class="footer-compare">
+                    <a class="footer-link" href="#">Сравнить</a>
+                </div>
+                <div class="footer-cart">
+                    <a class="footer-link" href="#">Корзина</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-row-nav">
+            <p class="footer-text">г. Москва, ул. Строителей, 15</p>
+            <ul>
+                <li><a href="#">Доставка</a></li>
+                <li><a href="#">Гарантия</a></li>
+                <li><a href="#">Контакты</a></li>
+            </ul>
+            <p class="footer-text">Тел.: +7 (495) 495-95-95</p>
+        </div>
+        <div class="footer-row-nav">
+            <ul>
+                <li>
+                    <a class="footer-social" href="#">
+                        <img  src="{% static 'image/device/fb.svg' %}" alt="ss">
+                    </a>
+                </li>
+                <li>
+                    <a class="footer-social" href="#">
+                        <img src="{% static 'image/device/vk.svg' %}" alt="">
+                    </a>
+                </li>
+                <li>
+                     <a class="footer-social"  href="#">
+                        <img src="{% static 'image/device/twitter.svg' %}" alt="">
+                    </a>
+                </li>
+            </ul>
+            <img class="footer-school-logo" src="{% static 'image/device/logo-html.svg' %}" alt="">
+        </div>
+
+    </div>
     </footer>
 
         {# Форма письма #}

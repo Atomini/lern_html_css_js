@@ -1,0 +1,125 @@
+footer{
+    background-color: #464646;
+
+}
+
+.footer-container{
+    width: 1280px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.footer-container .link{
+    color: darkgrey;
+
+}
+
+.footer-logo{
+    width: 163px;
+    height: 35px;
+}
+
+.footer-row-nav{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 66px;
+    
+    margin-bottom: 40px;
+
+    justify-content: space-between;
+}
+
+.footer-row-nav:last-child{
+    margin-bottom: 0;
+}
+
+.footer-nav-container{
+    display: flex;
+    flex-wrap: wrap;
+
+    position: relative;
+    justify-content: space-between;
+
+    width: 330px;
+
+}
+
+.footer-login,
+.footer-compare,
+.footer-cart{
+    padding-left: 30px;
+
+    position: relative;
+}
+
+.footer-login::before{
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("/static/image/device/footer-login.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+
+}
+
+.footer-compare::before{
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("/static/image/device/footer-compare.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.footer-cart::before{
+    content: "";
+
+    position: absolute;
+    top: 9px;
+    left: 10px;
+
+    width: 18px;
+    height: 18px;
+
+    background-image: url("/static/image/device/footer-cart.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+}
+
+.footer-link{
+    color: #cccccc;
+}
+
+.footer-link:hover{
+    color: white;
+}
+
+.footer-link:active{
+    color: #cccccc;
+}
+
+.footer-text{
+    color: white;
+}
+
+.footer-social{
+    width: 32px;
+    height: 32px;
+}
+
+.footer-school-logo{
+    width: 27px;
+    height: 35px;
+}

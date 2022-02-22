@@ -240,12 +240,11 @@ a.button{
     width: 1280px;
 
     margin: 0 auto;
-    margin-bottom: 110px;
+    margin-bottom: 80px;
     padding: 0;
 
     display: flex;
     justify-content: space-between;
-
 
 }
 
