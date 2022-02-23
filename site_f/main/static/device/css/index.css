@@ -321,3 +321,17 @@ a.button{
     height: 222px;
     width: 100%;
 }
+
+.modal{
+    position: fixed;
+
+    color: #000000;
+
+    background-color: #f8f3f0;
+    box-shadow: 0 30px 50px rgba(0, 0, 0, 0.7);
+}
+
+.modal-map{
+    
+    top: 120px;
+}

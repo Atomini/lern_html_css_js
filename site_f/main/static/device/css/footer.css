@@ -19,17 +19,21 @@ footer{
     height: 35px;
 }
 
+.footer-row-nav:first-child{
+    padding-top: 66px;
+}
+
 .footer-row-nav{
     display: flex;
     flex-wrap: wrap;
-    padding-top: 66px;
-    
+
     margin-bottom: 40px;
 
     justify-content: space-between;
 }
 
 .footer-row-nav:last-child{
+    padding-bottom: 66px;
     margin-bottom: 0;
 }
 
@@ -122,4 +126,82 @@ footer{
 .footer-school-logo{
     width: 27px;
     height: 35px;
+}
+
+.footer-logo-link:hover{
+    opacity: 0.5;
+}
+
+.footer-logo-link:active{
+    opacity: 0.2;
+}
+
+.footer-services{
+    list-style: none;
+
+    display: flex;
+
+    justify-content: space-between;
+    
+    min-width: 450px;
+}
+
+.footer-services-item a{
+    color: white;
+    
+    font-family: "Gilroy-ExtraBold", Arial, sans-serif;
+    font-size: 18px;
+    line-height: 24px;
+    letter-spacing: 2px;
+
+    text-transform: uppercase;
+
+}
+
+.footer-services-item a{
+    text-decoration: none;
+}
+
+.footer-services-item a:hover{
+    opacity: 0.5;
+}
+
+.footer-services-item a:active{
+    opacity: 0.2;
+}
+
+.footer-social-list{
+    list-style: none;
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    min-width: 150px;
+
+    align-content: center;
+
+    padding: 10px;
+    padding-bottom: 0;
+    margin: 0;
+}
+
+.footer-social{
+    opacity: 0.6;
+}
+
+.footer-social:hover{
+    opacity: 0.9;
+}
+
+.footer-social:active{
+    opacity: 0.2;
+}
+
+.footer-yellow-line{
+    width: 80px;
+    height: 7px;
+    background-color: #f0c52e;
+    position: relative;
+    top: 32px;
 }
